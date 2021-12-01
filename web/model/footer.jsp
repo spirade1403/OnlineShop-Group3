@@ -17,11 +17,11 @@
           <h5 class="text-uppercase mb-4"><i class="fas fa-tshirt"></i>&nbsp;About shop</h5>
 
           <p>
-            Our purpose at Shope is to empower people to lead bold and full lives. 
+            Our purpose at DivineShop is provide Vietnamese user a way to fast and securely buy item from popular vendors like Steam and Blizzard,...
           </p>
 
           <p>
-            We believe that if you look good, you feel good. And when you feel good you can do good for others around you. Shope brings you a wide range of trendy shoes, beautiful scarves, and statement-making jewelry, all at affordable prices to make them accessible to you. 
+            We believe that entertaining is best for people's happiness.
           </p>
 
           <div class="my-4">
@@ -58,7 +58,7 @@
               <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội</span>
             </li>
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">shope@gmail.com</span>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">divineshop_fu@gmail.com</span>
             </li>
             <li class="mb-3">
               <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+84 123456789</span>
@@ -100,7 +100,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2021 Copyright:
-      <a class="text-white" href="#">SWP391 - GRP1</a>
+      <a class="text-white" href="#">SWP391 - GRP3</a>
     </div>
     <!-- Copyright -->
   </footer>

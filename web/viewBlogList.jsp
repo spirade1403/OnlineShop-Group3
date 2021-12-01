@@ -97,10 +97,11 @@ body{
                 
                 
                 
-                <img style="width: 100%; margin: 45px;" src="./resources/img/Blog/5233122.jpg" >
+                <img style="width: 100%; margin: 45px;" src="./resources/img/Blog/blogScreen.jpg" >
                 <div class="spotlight">
                 <h2 class="card-title show_txt">Các trang sản phẩm đang bán chạy ở Divine Shop</h2>
-                <p>Ngày nay các nhà làm game luôn tung ra các sản phẩm mới liên tục và chúng tôi, Devine Shop luôn luôn sẵn sàng cập nhật các game mới nhất, hot nhất để dến tay người tiêu dùng Việt Nam.</p>
+                <p>Ngày nay các nhà làm game luôn tung ra các sản phẩm mới liên tục và chúng tôi, Devine Shop luôn luôn sẵn sàng cập nhật các game mới nhất, hot nhất để dến tay người tiêu dùng Việt Nam. Mời các bạn tham khảo Các
+                </p>
                 </div>
             </div>
             <c:set var="i" value="0"></c:set>
