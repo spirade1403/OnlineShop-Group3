@@ -58,7 +58,7 @@ public class UpdateBlog extends HttpServlet {
             request.setAttribute("title", blog.getTitle());
             request.setAttribute("content", blog.getContent());
             request.setAttribute("imageLink", blog.getImageLink());
-            request.getRequestDispatcher("UpdateBlog.jsp").forward(request, response);
+            request.getRequestDispatcher("editBlog.jsp").forward(request, response);
         } catch (Exception e) {
             response.sendRedirect("Error.jsp");
         }
@@ -92,7 +92,7 @@ public class UpdateBlog extends HttpServlet {
             // Redirect to manage Blog after update successful
             response.sendRedirect("ManageBlog");
         } catch (Exception e) {
-            //response.sendRedirect("error.jsp");
+            //response.sendRedirect("errorNotFind.jsp");
         }
     }
 

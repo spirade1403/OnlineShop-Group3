@@ -79,9 +79,9 @@ public class ViewOrderDetails extends HttpServlet {
             request.setAttribute("Total", total);
             request.setAttribute("listO", orderList);
             
-            request.getRequestDispatcher("ViewOrderDetails.jsp").forward(request, response);
+            request.getRequestDispatcher("viewOrderDetail.jsp").forward(request, response);
         } catch (Exception ex) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

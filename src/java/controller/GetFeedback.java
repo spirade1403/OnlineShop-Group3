@@ -74,7 +74,7 @@ public class GetFeedback extends HttpServlet {
 
             request.setAttribute("product", product);
             request.setAttribute("orderId", orderId);
-            request.getRequestDispatcher("GetFeedback.jsp").forward(request, response);
+            request.getRequestDispatcher("customerFeedback.jsp").forward(request, response);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -127,7 +127,7 @@ public class GetFeedback extends HttpServlet {
             // redirect to productlist
             response.sendRedirect("home");
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

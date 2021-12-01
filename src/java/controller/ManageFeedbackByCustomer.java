@@ -42,9 +42,9 @@ public class ManageFeedbackByCustomer extends HttpServlet {
             //get list of Feedback to manage
             ArrayList<Feedback> feedbackList = dao.getFeedbacksByUserId(user.getUserID());
             request.setAttribute("lsfeedback", feedbackList);
-            request.getRequestDispatcher("ManageFeedbackBySeller.jsp").forward(request, response);
+            request.getRequestDispatcher("editFeedback.jsp").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

@@ -42,7 +42,7 @@ public class DetailControl extends HttpServlet {
         request.setAttribute("detail", productDetail);
         request.setAttribute("images", productDetail.getImages());
         request.setAttribute("feedbacks", fDAO.getFeedbacksByProductId(id));
-        request.getRequestDispatcher("Detail.jsp").forward(request, response);
+        request.getRequestDispatcher("viewProductDetail.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

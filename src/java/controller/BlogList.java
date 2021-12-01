@@ -38,9 +38,9 @@ public class BlogList extends HttpServlet {
             // get List of Blog from database
             ArrayList<Blog> blogList = BlogDAO.getAllBlogs();
             request.setAttribute("blogList", blogList);
-            request.getRequestDispatcher("BlogList.jsp").forward(request, response);
+            request.getRequestDispatcher("viewBlogList.jsp").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
         
     }

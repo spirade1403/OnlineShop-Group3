@@ -80,15 +80,15 @@ public class ManagerOrderControler extends HttpServlet {
                 request.setAttribute("totalPro", pdao.getTotalProduct());
                 request.setAttribute("totalOrders", odao.getTotalOrders());
                 request.setAttribute("listOrder", olist);
-                request.getRequestDispatcher("OrderDashBoard.jsp").forward(request, response);
+                request.getRequestDispatcher("viewOrderDashboard.jsp").forward(request, response);
 
             } else {
-                response.sendRedirect("error.jsp");
+                response.sendRedirect("errorNotFind.jsp");
 
             }
 
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

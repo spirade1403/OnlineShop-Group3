@@ -52,9 +52,9 @@ public class viewOrder extends HttpServlet {
             OrderDAO orderDAO = new OrderDAO();
             List<Order> orders = orderDAO.getOrderByUserID(id);
             request.setAttribute("orders", orders);
-            request.getRequestDispatcher("ViewOrdersHistory.jsp").forward(request, response);
+            request.getRequestDispatcher("viewOrderHistort.jsp").forward(request, response);
         } catch (Exception ex) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

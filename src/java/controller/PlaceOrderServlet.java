@@ -119,7 +119,7 @@ public class PlaceOrderServlet extends HttpServlet {
             Logger.getLogger(PlaceOrderServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
 //        GMAIL
-        request.getRequestDispatcher("/finishedorder.jsp").forward(request, response);
+        request.getRequestDispatcher("/viewFinishedOrder.jsp").forward(request, response);
     }
 
     /**

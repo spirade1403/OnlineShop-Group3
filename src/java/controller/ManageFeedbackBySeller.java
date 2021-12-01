@@ -134,10 +134,10 @@ public class ManageFeedbackBySeller extends HttpServlet {
                 System.out.println(feedback.toString());
             }
             request.setAttribute("lsFeedback", lsFeedback);
-            request.getRequestDispatcher("ManageFeedbackBySeller.jsp").forward(request, response);
+            request.getRequestDispatcher("editFeedback.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

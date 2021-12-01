@@ -66,7 +66,7 @@ public class CustomerFilter implements Filter {
         try {
             if (u==null || u.getRoleID() !=1 && url.endsWith("CustomerServlet?action=List")) {
                 {
-                    httpResponse.sendRedirect("invalid-role.jsp");
+                    httpResponse.sendRedirect("errorNoPermission.jsp");
                 }
             } else {
                 chain.doFilter(request, response);

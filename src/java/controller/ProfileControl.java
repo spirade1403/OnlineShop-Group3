@@ -60,9 +60,9 @@ public class ProfileControl extends HttpServlet {
                 Users a= u.getUsersByID(user.getUserID());
             request.setAttribute("user", a);
             
-            request.getRequestDispatcher("UserProfile.jsp").forward(request, response);
+            request.getRequestDispatcher("viewUserProfile.jsp").forward(request, response);
             }else{
-                response.sendRedirect("error.jsp");
+                response.sendRedirect("errorNotFind.jsp");
             }
         } catch (Exception e) {
             

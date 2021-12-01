@@ -38,9 +38,9 @@ public class BlogDetail extends HttpServlet {
             //get Blog from database
             Blog blog = BlogDAO.getBlogByID(id);
             request.setAttribute("blog", blog);
-            request.getRequestDispatcher("BlogDetail.jsp").forward(request, response);
+            request.getRequestDispatcher("viewBlogDetail.jsp").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

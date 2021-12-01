@@ -50,7 +50,7 @@ public class LoginControl extends HttpServlet {
                request.setAttribute("mess1", "Login fail!");
                //ko thì quay trở lại trang login.jsp
                //Yêu cầu người dùng Login lại
-               request.getRequestDispatcher("Login.jsp").forward(request, response);
+               request.getRequestDispatcher("login.jsp").forward(request, response);
             }
             else{
                 HttpSession session = request.getSession();
@@ -60,7 +60,7 @@ public class LoginControl extends HttpServlet {
        }
        else
        {
-            request.getRequestDispatcher("Login.jsp").forward(request, response);
+            request.getRequestDispatcher("login.jsp").forward(request, response);
        }
        
    }

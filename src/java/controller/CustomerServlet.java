@@ -44,17 +44,17 @@ public class CustomerServlet extends HttpServlet {
             String action = request.getParameter("action");
             CustomerDAO cusDao = new CustomerDAO();
             if (action == null || action.equals("")) {
-                request.getRequestDispatcher("view-customers.jsp").forward(request, response);
+                request.getRequestDispatcher("viewCustomerInformation.jsp").forward(request, response);
                 return;
             }
             switch (action) {
                 case "List":
                     Users user = (Users) request.getSession().getAttribute("user");
                     if (user.getRoleID() != 1) {
-                         request.getRequestDispatcher("invalid-role.jsp").forward(request, response);
+                         request.getRequestDispatcher("errorNoPermission.jsp").forward(request, response);
                     } else {
                         request.setAttribute("LIST_CUSTOMER", cusDao.getAll());
-                        request.getRequestDispatcher("view-customers.jsp").forward(request, response);
+                        request.getRequestDispatcher("viewCustomerInformation.jsp").forward(request, response);
                         break;
                     }
 

@@ -79,7 +79,7 @@ public class DashboardController extends HttpServlet {
                 olist = odao.getOdByListProduct(plist);
 
             } else {
-                response.sendRedirect("error.jsp");
+                response.sendRedirect("errorNotFind.jsp");
 
             }
             
@@ -88,10 +88,10 @@ public class DashboardController extends HttpServlet {
             request.setAttribute("totalPro", pdao.getTotalProduct());
             request.setAttribute("totalOrders", odao.getTotalOrders());
             request.setAttribute("listOrder", olist);
-            request.getRequestDispatcher("Dashboard.jsp").forward(request, response);
+            request.getRequestDispatcher("viewDashboard.jsp").forward(request, response);
 
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

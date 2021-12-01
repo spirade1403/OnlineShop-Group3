@@ -67,7 +67,7 @@ public class ManagerControl extends HttpServlet {
         
         request.setAttribute("listCate", listCate);
         request.setAttribute("list", list);
-        request.getRequestDispatcher("ManagerProduct.jsp").forward(request, response);
+        request.getRequestDispatcher("adminProductManagement.jsp").forward(request, response);
     }
 
     /**

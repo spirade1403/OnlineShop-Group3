@@ -35,7 +35,7 @@ public class HomeServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
 
-        request.getRequestDispatcher("Homepage.jsp").forward(request, response);
+        request.getRequestDispatcher("homepage.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -53,7 +53,7 @@ public class HomeServlet extends HttpServlet {
        ProductDAO dao = new ProductDAO(); 
        ArrayList<Product> listProduct = dao.getAllProduct();
        request.setAttribute("listProduct", listProduct);
-       request.getRequestDispatcher("Homepage.jsp").forward(request, response);
+       request.getRequestDispatcher("homepage.jsp").forward(request, response);
     }
 
     /**

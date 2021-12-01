@@ -45,7 +45,7 @@ public class AddBlog extends HttpServlet {
             dao.add(author, title, content, imageLink);
             response.sendRedirect("ManageBlog");
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
 
         }
     }
@@ -62,7 +62,7 @@ public class AddBlog extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("AddBlog.jsp");
+        response.sendRedirect("addBlog.jsp");
     }
 
     /**
@@ -90,7 +90,7 @@ public class AddBlog extends HttpServlet {
             dao.add(author, title, content, imageLink);
             request.getRequestDispatcher("ManageBlog").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
 
         }
     }

@@ -93,12 +93,12 @@ public class OrderDetailsController extends HttpServlet {
 
                 request.getRequestDispatcher("/OrderDetail.jsp").forward(request, response);
             } else {
-                  response.sendRedirect("error.jsp");
+                  response.sendRedirect("errorNotFind.jsp");
             }
 
 
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

@@ -59,7 +59,7 @@ public class searchAccount extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("SearchAccount.jsp").forward(request, response);
+        request.getRequestDispatcher("searchAccount.jsp").forward(request, response);
     }
 
     /**
@@ -78,7 +78,7 @@ public class searchAccount extends HttpServlet {
         List<Users> list = dao.getStudentByName(txt);
         request.setAttribute("listS", list);
         request.setAttribute("tag", txt);
-        request.getRequestDispatcher("SearchAccount.jsp").
+        request.getRequestDispatcher("searchAccount.jsp").
                 forward(request, response);
     }
 

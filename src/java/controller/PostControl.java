@@ -37,7 +37,7 @@ public class PostControl extends HttpServlet {
            List<Post> postList = pdao.getAllPost();
            
            request.setAttribute("postList", postList);
-           request.getRequestDispatcher("PostList.jsp").forward(request, response);
+           request.getRequestDispatcher("viewPostList.jsp").forward(request, response);
         
     }
 

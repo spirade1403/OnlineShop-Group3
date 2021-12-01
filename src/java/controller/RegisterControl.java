@@ -41,7 +41,7 @@ public class RegisterControl extends HttpServlet {
        
         if(!pass.equals(re_pass)){
             //request.setAttribute("mess1", "password and repeat password must be same!");
-            response.sendRedirect("Login.jsp");
+            response.sendRedirect("login.jsp");
         }
         else{
             LoginDAO dao = new LoginDAO();
@@ -52,7 +52,7 @@ public class RegisterControl extends HttpServlet {
                 response.sendRedirect("home");
             }else
             //day ve login
-                response.sendRedirect("Login.jsp");
+                response.sendRedirect("login.jsp");
         }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

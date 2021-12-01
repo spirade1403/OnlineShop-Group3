@@ -70,9 +70,9 @@ public class editAccount extends HttpServlet {
             request.setAttribute("pass", x.getPassword());
             request.setAttribute("email", x.getEmail());
             request.setAttribute("role", x.getRoleID());
-            request.getRequestDispatcher("EditAccount.jsp").forward(request, response);
+            request.getRequestDispatcher("editAccount.jsp").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

@@ -45,7 +45,7 @@ public class DeleteBlog extends HttpServlet {
              // Redirect to manage Blog after delete successful
             response.sendRedirect("ManageBlog");
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

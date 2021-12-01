@@ -64,7 +64,7 @@ public class ResetPassword extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("ResetPassword.jsp");
+        response.sendRedirect("resetPassword.jsp");
     }
 
     /**
@@ -86,7 +86,7 @@ public class ResetPassword extends HttpServlet {
             Users u = dao.getUsersByEmail(mailTo);
             if (u == null) {
                 request.setAttribute("warn", "The email did not exist, please try again!");
-                request.getRequestDispatcher("ResetPassword.jsp").forward(request, response);
+                request.getRequestDispatcher("resetPassword.jsp").forward(request, response);
             } else {
                 //FIX DEFAULT LENGTH OF PASSWORD 8 CHARACTORS
                 int charactor = 8;
@@ -101,12 +101,12 @@ public class ResetPassword extends HttpServlet {
                 //SEND NEW PASSWORD
               
                 //ADD GMAIL API
-                response.sendRedirect("Login.jsp");
+                response.sendRedirect("login.jsp");
 
             }
         } catch (Exception ex) {
             request.setAttribute("warn", "The email did not exist, please try again!");
-            request.getRequestDispatcher("ResetPassword.jsp").forward(request, response);
+            request.getRequestDispatcher("resetPassword.jsp").forward(request, response);
         }
     }
 

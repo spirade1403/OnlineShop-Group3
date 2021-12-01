@@ -85,7 +85,7 @@ public class CheckOutServlet extends HttpServlet {
         ShipDAO sdao=new ShipDAO();
         Ship ship=sdao.getShip(Integer.parseInt(request.getParameter("inputCity")));
         request.setAttribute("shipCity", ship);
-        request.getRequestDispatcher("/checkout.jsp").forward(request, response);
+        request.getRequestDispatcher("/checkOut.jsp").forward(request, response);
     }
 
     /**

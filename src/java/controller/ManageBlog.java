@@ -39,10 +39,10 @@ public class ManageBlog extends HttpServlet {
           //get list of Blog to manage
             ArrayList<Blog> blogList = BlogDAO.getAllBlogs();
             request.setAttribute("blogList", blogList);
-            request.getRequestDispatcher("ManageBlog.jsp").forward(request, response);
+            request.getRequestDispatcher("adminBlogManagement.jsp").forward(request, response);
         }
         catch(Exception e){
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

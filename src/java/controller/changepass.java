@@ -59,7 +59,7 @@ public class changepass extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("ChangePassword.jsp");
+        response.sendRedirect("resetPassword.jsp");
     }
 
     /**
@@ -88,10 +88,10 @@ public class changepass extends HttpServlet {
                     dao.updatePassword(user.getUserID(), newPassword);
                     response.sendRedirect(request.getContextPath()+"/ProfileControl");
                 } else {
-                    request.getRequestDispatcher("ChangePassword.jsp").forward(request, response);
+                    request.getRequestDispatcher("resetPassword.jsp").forward(request, response);
                 }
             } else {
-                response.sendRedirect("error.jsp");
+                response.sendRedirect("errorNotFind.jsp");
             }
         } catch (Exception e) {
         }

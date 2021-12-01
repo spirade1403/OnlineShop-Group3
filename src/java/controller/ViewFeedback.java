@@ -71,10 +71,10 @@ public class ViewFeedback extends HttpServlet {
             if (!replist.isEmpty()){
             rep= replyDAO.getFeedbacksRepliesByFeedbackId(feedbackId).get(0).getRepliesText();}
             request.setAttribute("rep", rep);
-            request.getRequestDispatcher("ViewFeedback.jsp").forward(request, response);
+            request.getRequestDispatcher("viewFeedback.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

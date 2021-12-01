@@ -72,7 +72,7 @@ public class ProductListServlet extends HttpServlet {
            if(i<products.size())
                 display.add(products.get(i));
         request.setAttribute("products", display);
-        request.getRequestDispatcher("productlist.jsp").forward(request, response);
+        request.getRequestDispatcher("viewProductList.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -31,7 +31,7 @@ public class error extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            request.getRequestDispatcher("error.jsp").forward(request, response);
+            request.getRequestDispatcher("errorNotFind.jsp").forward(request, response);
         }
     }
 

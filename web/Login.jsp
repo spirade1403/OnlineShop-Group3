@@ -67,7 +67,7 @@
                             <input class="input-custom" name="user" type="text" placeholder="Username">
                             <input class="input-custom" name ="pass" type="password" placeholder="Password">
                             <input type="submit" name="action" class="myBtn" value="Login"/>
-                            <a href="ResetPassword.jsp">Forgot password</a>
+                            <a href="resetPassword.jsp">Forgot password</a>
                         </form>
                          <h4 class="text-danger">${mess1}</h4>
                         <!--- Register--->

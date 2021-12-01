@@ -63,7 +63,7 @@ public class deleteAccount extends HttpServlet {
             dao.deleteAccount(id);
             response.sendRedirect("AccountManagerControl");
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 

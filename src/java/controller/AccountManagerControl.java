@@ -35,9 +35,9 @@ public class AccountManagerControl extends HttpServlet {
             List<Users> listAccount = userDAO.getAllUsers();
             //Set data to JSP
             request.setAttribute("list", listAccount);
-            request.getRequestDispatcher("AccountManager.jsp").forward(request, response);
+            request.getRequestDispatcher("adminAccountManagement.jsp").forward(request, response);
         } catch (Exception e) {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("errorNotFind.jsp");
         }
     }
 
