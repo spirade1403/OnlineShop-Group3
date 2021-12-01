@@ -53,7 +53,7 @@
 
     <div class="container-fluid bg-light">
         <!-- LOGO -->
-        <a class="navbar-brand col-lg-2 offset-lg-2 logo" href="${pageContext.request.contextPath}/home"><img src="${pageContext.request.contextPath}/resources/img/SHOPE-logos_transparent.png"> </a>
+        <a class="navbar-brand col-lg-2 offset-lg-2 logo" href="${pageContext.request.contextPath}/home"><img src="${pageContext.request.contextPath}/resources/img/divineShop.png"> </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -198,9 +198,6 @@
 <nav id="navbar2" class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block p-1">
     <div class="container-fluid">
         <ul class="navbar-nav offset-2 me-auto mb-2 mb-lg-0">
-            <li class="nav-item me-4">
-                <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/home">Home</a>
-            </li>
              <li class="nav-item me-4">
               <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/PostControl">Post</a>
             </li>

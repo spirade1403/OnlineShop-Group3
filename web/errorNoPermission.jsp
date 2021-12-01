@@ -39,7 +39,7 @@
 				<div></div>
 				<h1>Error</h1>
 			</div>
-                    <h2>Only admin can view list of customers</h2>
+                    <h2>You don't have permission to view this page</h2>
 			<a href="home">home page</a>
 		</div>
 	</div>
