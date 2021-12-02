@@ -21,12 +21,12 @@ public class DBcontext {
         public static Connection open()
         {
             try {
+                String username = "java";
+                String password = "password";
                 String server="localhost";
-                String databasename="OnlineShop";
-                String username="sa";
-                String password="123456";
-                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                return DriverManager.getConnection("jdbc:sqlserver://"+server+":1433;databaseName="+databasename,username,password);
+                String databasename="onlineshop";
+                Class.forName("com.mysql.jdbc.Driver");
+                return DriverManager.getConnection("jdbc:mysql://"+server+":3306;databaseName="+databasename,username,password);
 
             } catch (ClassNotFoundException | SQLException ex) {
                 Logger.getLogger(DBcontext.class.getName()).log(Level.SEVERE, null, ex);
